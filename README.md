@@ -1,6 +1,3 @@
-Claro. Vou deixar o `README.md` mais simples e acadêmico, **sem emojis**, usando títulos com `##`, blocos de código e a estrutura mais limpa.
-
- README.md
 
 # Atividade 08 - API de Pedidos
 
