@@ -434,7 +434,7 @@ http://localhost:3000/
  ## Print da rota inicial
 
 ```
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![print1](aula08get1.png)
 ```
 
  ## Teste para listar os itens
@@ -469,7 +469,7 @@ GET http://localhost:3000/itens
  ## Print do GET de itens
 
 ```
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![print 2](aula08get2.png)
 ```
 
  ## Teste para criar um item
@@ -500,7 +500,7 @@ POST http://localhost:3000/itens
  ## Print do POST de itens
 
 ```
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![print 3](aula08post3.png)
 ```
 
  ## Teste para listar os pedidos
@@ -518,7 +518,7 @@ GET http://localhost:3000/pedidos
  ## Print do GET de pedidos
 
 ```
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![print 4](aula08get4.png)
 ```
 
  ## Teste para criar um pedido
