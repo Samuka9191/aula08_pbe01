@@ -431,7 +431,7 @@ http://localhost:3000/
  ## Print da rota inicial
 
 
-![print1](aula08get1.png)
+![print1](imgs/aula08get1.png)
 
 
  ## Teste para listar os itens
@@ -465,7 +465,7 @@ GET http://localhost:3000/itens
 
  ## Print do GET de itens
 
-![print 2](aula08get2.png)
+![print 2](imgs/aula08get2.png)
 
 
  ## Teste para criar um item
@@ -495,7 +495,7 @@ POST http://localhost:3000/itens
 
  ## Print do POST de itens
 
-![print 3](aula08post3.png)
+![print 3](imgs/aula08post3.png)
 
 
  ## Teste para listar os pedidos
@@ -513,7 +513,7 @@ GET http://localhost:3000/pedidos
  ## Print do GET de pedidos
 
 
-![print 4](aula08get4.png)
+![print 4](imgs/aula08get4.png)
 
 
  ## Teste para criar um pedido
@@ -542,7 +542,7 @@ POST http://localhost:3000/pedidos
  ## Print do POST de pedidos
 
 
-![ print 5](aula08post5.png)
+![ print 5](imgs/aula08post5.png)
 
 
  ## Teste de alteração de item
@@ -564,7 +564,7 @@ Em construção
  ## Print do PUT de itens
 
 
-![print 6](aula08put6.png)
+![print 6](imgs/aula08put6.png)
 
 
  ## Teste de exclusão de item
@@ -586,7 +586,7 @@ Em construção
  ## Print do DELETE de itens
 
 
-![print 7](aula08del07.png)
+![print 7](imgs/aula08del07.png)
 
 
  ## Teste de alteração de pedido
