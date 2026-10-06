@@ -433,9 +433,9 @@ http://localhost:3000/
 
  ## Print da rota inicial
 
-```
+
 ![print1](aula08get1.png)
-```
+
 
  ## Teste para listar os itens
 
@@ -468,9 +468,8 @@ GET http://localhost:3000/itens
 
  ## Print do GET de itens
 
-```
 ![print 2](aula08get2.png)
-```
+
 
  ## Teste para criar um item
 
@@ -499,9 +498,8 @@ POST http://localhost:3000/itens
 
  ## Print do POST de itens
 
-```
 ![print 3](aula08post3.png)
-```
+
 
  ## Teste para listar os pedidos
 
@@ -517,9 +515,9 @@ GET http://localhost:3000/pedidos
 
  ## Print do GET de pedidos
 
-```
+
 ![print 4](aula08get4.png)
-```
+
 
  ## Teste para criar um pedido
 
@@ -546,9 +544,9 @@ POST http://localhost:3000/pedidos
 
  ## Print do POST de pedidos
 
-```
+
 [ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
-```
+
 
  ## Teste de alteração de item
 
@@ -568,9 +566,9 @@ Em construção
 
  ## Print do PUT de itens
 
-```
+
 [ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
-```
+
 
  ## Teste de exclusão de item
 
@@ -590,9 +588,9 @@ Em construção
 
  ## Print do DELETE de itens
 
-```
+
 [ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
-```
+
 
  ## Teste de alteração de pedido
 
@@ -612,9 +610,9 @@ Em construção
 
  ## Print do PUT de pedidos
 
-```
+
 [ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
-```
+
 
  ## Teste de exclusão de pedido
 
@@ -634,9 +632,9 @@ Em construção
 
  ## Print do DELETE de pedidos
 
-```
+
 [ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
-```
+
 
  ## Resumo
 
