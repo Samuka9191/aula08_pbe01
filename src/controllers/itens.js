@@ -1,5 +1,10 @@
 const itens = require("../../dados/itens.json")
 
+const listar = (req, res) => {
+    subotais()
+    res.json(itens)
+}
+
 function subotais() {
     itens.forEach(p => {
         p.calcTotais = p.quantidade * p.preco
@@ -7,18 +12,38 @@ function subotais() {
 }
 
 const criar = (req, res) => {
-    const dados = req.body
-    dados.id = Number(itens[itens.length - 1].id) + 1 
-    res.status(201).json(dados)
+     if(req.body){
+        const novoId = itens.length + 1;
+
+        itens.push(req.body);
+
+        res.send("Pedido cadastrado com sucesso")
+     }
 }
 
-const listar = (req, res) => {
-    subotais()
-    res.json(itens)
+const alterar = (req, res) => {
+    const id = req.params.id;
+    const dados = req.body;
+
+    itens.forEach((itens) =>{
+      if(itens.id == id ) {
+        itens.pedido_id = dados.pedido_id;
+        itens.produto_id = dados.produto_id;
+        itens.preco = dados.preco
+        itens.quantidade = dados.quantidade
+      }
+    })
 }
 
-const alterar = (req, res) => { res.json("Em construção") }
-const excluir = (req, res) => { res.json("Em construção") }
+const excluir = (req, res) => { 
+    const id = req.params.id;
+
+    itens.forEach((itens, indice) =>{
+        if(itens.id == id ){
+            itens.splice(indice, 1)
+        }
+    })
+}
 
 module.exports = {
     criar, listar, alterar, excluir
