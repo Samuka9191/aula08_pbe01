@@ -545,7 +545,7 @@ POST http://localhost:3000/pedidos
  ## Print do POST de pedidos
 
 
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![ print 5](aula08post5.png)
 
 
  ## Teste de alteração de item
@@ -567,7 +567,7 @@ Em construção
  ## Print do PUT de itens
 
 
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![print 6](aula08put6.png)
 
 
  ## Teste de exclusão de item
@@ -589,7 +589,7 @@ Em construção
  ## Print do DELETE de itens
 
 
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
+![print 7](aula08del07.png)
 
 
  ## Teste de alteração de pedido
@@ -608,11 +608,6 @@ PUT http://localhost:3000/pedidos/1
 Em construção
 ```
 
- ## Print do PUT de pedidos
-
-
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
-
 
  ## Teste de exclusão de pedido
 
@@ -629,11 +624,6 @@ DELETE http://localhost:3000/pedidos/1
 ```
 Em construção
 ```
-
- ## Print do DELETE de pedidos
-
-
-[ INSIRA O PRINT DO THUNDER CLIENT AQUI ]
 
 
  ## Resumo
