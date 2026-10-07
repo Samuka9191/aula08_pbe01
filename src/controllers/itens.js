@@ -33,6 +33,7 @@ const alterar = (req, res) => {
         itens.quantidade = dados.quantidade
       }
     })
+     res.send("Item alterado com sucesso")
 }
 
 const excluir = (req, res) => { 
@@ -42,7 +43,9 @@ const excluir = (req, res) => {
         if(itens.id == id ){
             itens.splice(indice, 1)
         }
-    })
+    });
+    
+     res.send("Item excluído com sucesso")
 }
 
 module.exports = {

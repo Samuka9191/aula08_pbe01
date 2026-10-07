@@ -1,14 +1,26 @@
-const pedidos = require("../../dados/pedidos.json")
+const itens = require("../../dados/itens.json")
+
+const listar = (req, res) => {
+    subotais()
+    res.json(itens)
+}
+
+function subotais() {
+    itens.forEach(p => {
+        p.calcTotais = p.quantidade * p.preco
+    })
+}
 
 const criar = (req, res) => {
-    const dados = req.body
-    dados.id = Number(pedidos[pedidos.length - 1].id) + 1 
-    pedidos.push(dados)
-    res.status(201).json(dados)
+     if(req.body){
+        const novoId = itens.length + 1;
+
+        itens.push(req.body);
+
+        res.send("Pedido cadastrado com sucesso")
+     }
 }
-const listar = (req, res) => {
-    res.json(pedidos)
-}
+
 const alterar = (req, res) => {
     const id = req.params.id;
     const dados = req.body;
@@ -21,7 +33,7 @@ const alterar = (req, res) => {
         itens.quantidade = dados.quantidade
       }
     })
-     res.send("Pedido alterado com sucesso")
+     res.send("Produto alterado com sucesso")
 }
 
 const excluir = (req, res) => { 
@@ -32,7 +44,7 @@ const excluir = (req, res) => {
             itens.splice(indice, 1)
         }
     });
-     res.send("Pedido excluído com sucesso")
+     res.send("Produto excluído com sucesso")
 }
 
 
