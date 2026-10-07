@@ -683,3 +683,153 @@ dados/pedidos.json
  A API permite consultar e criar itens e pedidos. As operações de alteração e exclusão já possuem suas respectivas rotas e controllers, porém ainda estão em construção.
 
  Os testes das rotas foram realizados utilizando o Thunder Client.
+
+API de Clientes
+Listar clientes
+Para listar todos os clientes cadastrados:
+
+GET http://localhost:3000/clientes
+
+Exemplo de resposta:
+
+[
+    {
+        "id": 1,
+        "cpf": "11111111111",
+        "nome": "João"
+    },
+    {
+        "id": 2,
+        "cpf": "22222222222",
+        "nome": "Maria"
+    }
+]
+
+Print do GET de clientes
+Criar cliente
+Para cadastrar um novo cliente:
+
+POST http://localhost:3000/clientes
+
+No Body, selecione JSON:
+
+{
+    "cpf": "33333333333",
+    "nome": "Carlos"
+}
+
+O sistema gera automaticamente o próximo id.
+
+Exemplo de resposta:
+
+{
+    "cpf": "33333333333",
+    "nome": "Carlos",
+    "id": 3
+}
+
+Print do POST de clientes
+Alterar cliente
+Para alterar um cliente:
+
+PUT http://localhost:3000/clientes/1
+
+Body:
+
+{
+    "cpf": "99999999999",
+    "nome": "João Silva"
+}
+
+Resposta:
+
+Cliente alterado com sucesso
+
+Print do PUT de clientes
+Excluir cliente
+Para excluir um cliente:
+
+DELETE http://localhost:3000/clientes/1
+
+Resposta:
+
+Cliente excluído com sucesso
+
+Print do DELETE de clientes
+API de Produtos
+Listar produtos
+Para listar todos os produtos cadastrados:
+
+GET http://localhost:3000/produtos
+
+Exemplo de resposta:
+
+[
+    {
+        "id": 1,
+        "nome": "Mouse",
+        "preco": 30,
+        "quantidade": 2
+    },
+    {
+        "id": 2,
+        "nome": "Teclado",
+        "preco": 45,
+        "quantidade": 2
+    }
+]
+
+Print do GET de produtos
+Criar produto
+Para cadastrar um novo produto:
+
+POST http://localhost:3000/produtos
+
+No Body, selecione JSON:
+
+{
+    "nome": "Headset",
+    "preco": 120,
+    "quantidade": 5
+}
+
+O sistema gera automaticamente o próximo id.
+
+Exemplo de resposta:
+
+{
+    "nome": "Headset",
+    "preco": 120,
+    "quantidade": 5,
+    "id": 3
+}
+
+Print do POST de produtos
+Alterar produto
+Para alterar um produto:
+
+PUT http://localhost:3000/produtos/1
+
+Body:
+
+{
+    "nome": "Mouse Gamer",
+    "preco": 80,
+    "quantidade": 10
+}
+
+Resposta:
+
+Produto alterado com sucesso
+
+Print do PUT de produtos
+Excluir produto
+Para excluir um produto:
+
+DELETE http://localhost:3000/produtos/1
+
+Resposta:
+
+Produto excluído com sucesso
+
+Print do DELETE de produtos
