@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "nome":"seila de souza",
+        "email": "seila@gmail.com",
+        "telefone": "1234-5678",
+        "senha": "senha123"
+    },
+        {
+        "id":2,
+        "nome":"tantofaz ferreira",
+        "email": "tantofaz@gmail.com",
+        "telefone": "4324-5678",
+        "senha": "senha456"
+    },
+    {
+        "id":3,
+        "nome":"papa da silva",
+        "email": "papa@gmail.com",
+        "telefone": "1234-6143",
+        "senha": "senha789"
+    }
+]
