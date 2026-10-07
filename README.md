@@ -675,10 +675,10 @@ Thunder Client
 
  Os dados são armazenados nos arquivos:
 
-```
+
 dados/itens.json
 dados/pedidos.json
-```
+
 
  A API permite consultar e criar itens e pedidos. As operações de alteração e exclusão já possuem suas respectivas rotas e controllers, porém ainda estão em construção.
 

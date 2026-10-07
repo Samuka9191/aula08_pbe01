@@ -13,12 +13,10 @@ const alterar = (req, res) => {
     const id = req.params.id;
     const dados = req.body;
 
-    itens.forEach((itens) =>{
-      if(itens.id == id ) {
-        itens.pedido_id = dados.pedido_id;
-        itens.produto_id = dados.produto_id;
-        itens.preco = dados.preco
-        itens.quantidade = dados.quantidade
+    pedidos.forEach((pedidos) =>{
+      if(pedidos.id == id ) {
+        pedidos.cliente_id = dados.cliente_id;
+        pedidos.data = dados.data;
       }
     })
      res.send("Pedido alterado com sucesso")
@@ -27,9 +25,9 @@ const alterar = (req, res) => {
 const excluir = (req, res) => { 
     const id = req.params.id;
 
-    itens.forEach((itens, indice) =>{
-        if(itens.id == id ){
-            itens.splice(indice, 1)
+    pedidos.forEach((pedidos, indice) =>{
+        if(pedidos.id == id ){
+            pedidos.splice(indice, 1)
         }
     });
      res.send("Pedido excluído com sucesso")

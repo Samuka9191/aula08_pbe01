@@ -1,21 +1,16 @@
-const itens = require("../../dados/itens.json")
+const produto = require("../../dados/produto.json")
 
 const listar = (req, res) => {
     subotais()
-    res.json(itens)
+    res.json(produto)
 }
 
-function subotais() {
-    itens.forEach(p => {
-        p.calcTotais = p.quantidade * p.preco
-    })
-}
 
 const criar = (req, res) => {
      if(req.body){
-        const novoId = itens.length + 1;
+        const novoId = produto.length + 1;
 
-        itens.push(req.body);
+        produto.push(req.body);
 
         res.send("Pedido cadastrado com sucesso")
      }
@@ -25,12 +20,10 @@ const alterar = (req, res) => {
     const id = req.params.id;
     const dados = req.body;
 
-    itens.forEach((itens) =>{
-      if(itens.id == id ) {
-        itens.pedido_id = dados.pedido_id;
-        itens.produto_id = dados.produto_id;
-        itens.preco = dados.preco
-        itens.quantidade = dados.quantidade
+    produto.forEach((produto) =>{
+      if(produto.id == id ) {
+        produto.preco = dados.preco
+        produto.nome = dados.nome
       }
     })
      res.send("Produto alterado com sucesso")
@@ -39,9 +32,9 @@ const alterar = (req, res) => {
 const excluir = (req, res) => { 
     const id = req.params.id;
 
-    itens.forEach((itens, indice) =>{
-        if(itens.id == id ){
-            itens.splice(indice, 1)
+    produto.forEach((produto, indice) =>{
+        if(produto.id == id ){
+           produto.splice(indice, 1)
         }
     });
      res.send("Produto excluído com sucesso")

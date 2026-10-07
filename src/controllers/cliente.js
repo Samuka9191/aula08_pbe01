@@ -1,4 +1,4 @@
-const clientes = require("../../dados/clientes.json")
+const clientes = require("../../dados/cliente.json")
 
 const criar = (req, res) => {
     const dados = req.body
