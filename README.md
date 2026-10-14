@@ -765,7 +765,7 @@ Cliente excluído com sucesso
 
 ![print11](imgs/aula08del11.png)
 
-Print do DELETE de clientes
+
 API de Produtos
 Listar produtos
 Para listar todos os produtos cadastrados:
@@ -789,7 +789,6 @@ Exemplo de resposta:
     }
 ]
 
-Print do GET de produtos
 Criar produto
 Para cadastrar um novo produto:
 
@@ -816,7 +815,7 @@ Exemplo de resposta:
 
 ![print12](imgs/aula08get12.png)
 
-Print do POST de produtos
+
 Alterar produto
 Para alterar um produto:
 
