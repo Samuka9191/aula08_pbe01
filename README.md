@@ -814,12 +814,14 @@ Exemplo de resposta:
     "id": 3
 }
 
+![print12](imgs/aula08get12.png)
+
 Print do POST de produtos
 Alterar produto
 Para alterar um produto:
 
 PUT http://localhost:3000/produtos/1
-
+![print13](imgs/aula08post13.png)
 Body:
 
 {
@@ -832,7 +834,8 @@ Resposta:
 
 Produto alterado com sucesso
 
-Print do PUT de produtos
+![print14](imgs/aula08put14.png)
+
 Excluir produto
 Para excluir um produto:
 
@@ -842,4 +845,4 @@ Resposta:
 
 Produto excluído com sucesso
 
-Print do DELETE de produtos
+![print15](imgs/aula08del15.png)

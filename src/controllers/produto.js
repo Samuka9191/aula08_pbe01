@@ -1,7 +1,6 @@
 const produto = require("../../dados/produto.json")
 
 const listar = (req, res) => {
-    subotais()
     res.json(produto)
 }
 
@@ -12,7 +11,7 @@ const criar = (req, res) => {
 
         produto.push(req.body);
 
-        res.send("Pedido cadastrado com sucesso")
+        res.send("Produto cadastrado com sucesso")
      }
 }
 
@@ -22,8 +21,8 @@ const alterar = (req, res) => {
 
     produto.forEach((produto) =>{
       if(produto.id == id ) {
-        produto.preco = dados.preco
         produto.nome = dados.nome
+        produto.preco = dados.preco
       }
     })
      res.send("Produto alterado com sucesso")
