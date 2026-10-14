@@ -133,10 +133,6 @@ npm install
 npm run dev
 ```
 
- Também é possível iniciar normalmente utilizando:
-
-```
-npm start
 ```
 
  Ao iniciar o servidor, deverá aparecer no terminal:
