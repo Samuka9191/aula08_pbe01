@@ -78,24 +78,12 @@ atividade08/
 
  É necessário ter o Node.js instalado no computador.
 
- Para verificar a instalação, execute no terminal:
-
-```
-node -v
-```
-
- Depois:
-
-```
-npm -v
-```
-
  Após confirmar que o Node.js está instalado, abra a pasta do projeto no Visual Studio Code.
 
  Execute:
 
 ```
-npm install
+npm install express
 ```
 
  Esse comando instala as dependências definidas no arquivo `package.json`.
