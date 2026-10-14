@@ -751,6 +751,8 @@ Resposta:
 
 Cliente alterado com sucesso
 
+![print10](imgs/aula08put10.png)
+
 Print do PUT de clientes
 Excluir cliente
 Para excluir um cliente:
@@ -762,7 +764,6 @@ Resposta:
 Cliente excluído com sucesso
 
 ![print11](imgs/aula08del11.png)
-
 
 Print do DELETE de clientes
 API de Produtos
