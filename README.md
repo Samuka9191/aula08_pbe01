@@ -141,14 +141,7 @@ npm run dev
 Servidor respondendo em: http://localhost:3000
 ```
 
- ## Print do servidor
-
- Coloque abaixo o print do terminal mostrando o servidor funcionando.
-
-```
-[ INSIRA O PRINT AQUI ]
-```
-
+ 
  ## server.js
 
  O arquivo `server.js` é responsável por iniciar o servidor e configurar o Express.
