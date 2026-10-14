@@ -690,6 +690,9 @@ Para listar todos os clientes cadastrados:
 
 GET http://localhost:3000/clientes
 
+![print8](imgs/aula08get08.png)
+
+
 Exemplo de resposta:
 
 [
@@ -728,6 +731,9 @@ Exemplo de resposta:
     "id": 3
 }
 
+![print9](imgs/aula08post9.png)
+
+
 Print do POST de clientes
 Alterar cliente
 Para alterar um cliente:
@@ -754,6 +760,9 @@ DELETE http://localhost:3000/clientes/1
 Resposta:
 
 Cliente excluído com sucesso
+
+![print11](imgs/aula08del11.png)
+
 
 Print do DELETE de clientes
 API de Produtos
